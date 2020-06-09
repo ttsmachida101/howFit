@@ -7,8 +7,6 @@
 
 .workoutimage {
   background-image: url("./assets/img/img1.jpeg");
-  background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

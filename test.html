@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "./assets/js/test.js"></script>
+</head>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet"
+  oninput="lengthConverter(this.id, this.value)" onchange="lengthConverter(this.id, this.value)">
+</p>
+<p>cm: <span id="outputMeters"></span></p>
+<input id="inputInches" class="w3-input w3-border" type="number" placeholder="Inches" 
+oninput="lengthConverter(this.id, this.value)" onchange="lengthConverter(this.id, this.value)">
+</body>
+</html> 
