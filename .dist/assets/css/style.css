@@ -1,5 +1,16 @@
-#header
+#dataCollection
 {
     font-weight: 700;
-    background-image: url(../img/img1.jpeg);
+    background-image: url(../assets/img/1.jpeg);
+}
+
+
+.workoutimage {
+  background-image: url("./assets/img/img1.jpeg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
