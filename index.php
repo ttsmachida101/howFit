@@ -49,13 +49,14 @@ body> workoutimage {
  <section class = "data collection"> 
  <div class = "container" id = "dataCollection">
 
- <div class = "workoutimage"> <img src ="./assets/img/img1.jpeg" style ="background-size: cover;" >
+ <div class = "workoutimage"> 
 
 
  
    
  <div class="form-group row">
 <form action = "calculation.php" method = "POST">
+<img src ="./assets/img/img1.jpeg" style ="background-size: cover;" >
 <h3 class="text-center"> Enter Your Details </h3>
 <div>   
     
