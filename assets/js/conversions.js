@@ -14,23 +14,30 @@ function kgToLb(valNum) {
 }
 
 /*height conversions*/
-function heightConverter(source,valNum) {
+function heightConverter(source, valNum) {
   valNum = parseFloat(valNum);
   var inputFeet = document.getElementById("inputFeet");
-  var inputcm = document.getElementById("inputcm");
+  var inputCMeters = document.getElementById("inputCMeters");
  
   if (source=="inputFeet") {
-    inputcm.value=(valNum/0.032808).toFixed();
+   inputCMeters.value=(valNum/0.032808).toFixed();
+  }
+
+   if (source=="inputCMeters") {
+ inputFeet.value=(valNum*0.032808).toFixed(3);
   }
 }
 
 /* Weight Conversions */
 function weightConverter(source,valNum) {
   valNum = parseFloat(valNum);
-  var input = document.getElementById("inputFeet");
-  var inputcm = document.getElementById("inputcm");
+  var inputLb = document.getElementById("inputLb");
+  var inputKg = document.getElementById("inputKg");
  
-  if (source=="inputFeet") {
-    inputcm.value=(valNum/0.032808).toFixed();
+  if (source=="inputLb") {
+    inputKg.value=(valNum*0.453592).toFixed();
+  }
+   if (source=="inputKg") {
+    inputLb.value=(valNum*2.20462).toFixed();
   }
 }

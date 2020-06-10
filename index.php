@@ -95,10 +95,18 @@ if (isset ($_POST['submit']))
     <label for = "height"><b> Enter your height</b></label><br>
 </div>
     <div class="col-sm">
-   <input type = "number" class="form-control" name = "heightCm" placeholder="Cm" required ><br><br>
+   <input type = "number" id="inputCMeters" class="form-control" name = "heightCm" placeholder="CM" required 
+     oninput="heightConverter(this.id,this.value)" 
+    onchange="heightConverter(this.id,this.value)"><br><br>
+
    </div>
      <div class="col-sm">
-    <input type = "number" class="form-control" name = "heightFt" placeholder="Feet" required ><br><br>
+    <input type = "number" id ="inputFeet" class="form-control" name = "heightFt" placeholder="Feet"
+    oninput = "heightConverter(this.id,this.value)"
+     onchange ="heightConverter(this.id,this.value)">
+     <br><br>
+
+   
 
 </div>
 </div>
@@ -108,10 +116,17 @@ if (isset ($_POST['submit']))
   <label for = "weight"><b> Enter your weight</b></label><br>
   </div>
     <div class="col-sm">
-   <input type = "number" class="form-control" name = "weightKg" placeholder="Kg" required><br><br>
+   <input type = "number" id ="inputKg" class="form-control" name = "weightKg" placeholder="Kg" required 
+   oninput="weightConverter(this.id,this.value)" 
+    onchange="weightConverter(this.id,this.value)">
+    <br><br>
+    
    </div>
+
     <div class="col-sm">
-    <input type = "number" class="form-control" name = "weightLb" placeholder="Lb">
+    <input type = "number"id ="inputLb"  class="form-control" name = "weightLb" placeholder="Lb"
+    oninput="weightConverter(this.id,this.value)" 
+    onchange="weightConverter(this.id,this.value)">
       </div>
 </div>
 
@@ -186,10 +201,9 @@ if (isset ($_POST['submit']))
   </section>
   
   <!---------Scripts--------->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-       
-    </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="./assets/js/conversions.js"></script>
+</body>
 </html>
