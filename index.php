@@ -54,17 +54,26 @@ if (isset ($_POST['submit']))
 
 
 <div class="form-row">
-<h5 class="text"> Please enter your gender:  </h5>
+<div class="col-md-6">
+<h5 class="text"> Please enter your gender :</h5>
+</div>
 <div class="form-check form-check-inline"> 
 
+<div class="col-md-6">
 <label for="male">Male</label>
 <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
+</div>
 
+<div class="col-md-6">
 <label for="female">Female</label>
 <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+</div>
 
+<div class="col-md-6">
 <label for="other">Other</label>
 <input class="form-check-input" type="radio" id="other" name="gender" value="other">
+</div>
+
 </div>
 </div>
 
