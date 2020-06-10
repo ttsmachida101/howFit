@@ -2,10 +2,7 @@
 {
   font-weight: 800;
   opacity: 0.9;
-  color: rgb(255, 72, 0);
-  font: outline;
-
-    
+  color: rgb(255, 72, 0); 
 }
 
 
@@ -22,6 +19,13 @@
 #form-group 
 {
 transform: translate (-200px, -200px)
+
+}
+
+.jumbotron 
+{
+background-color: rgb(255, 0, 0);
+font-size: 200;
 
 }
 

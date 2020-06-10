@@ -46,15 +46,16 @@ if (isset ($_POST['submit']))
    <!----Form Section Begins---->
  <div class="form-group row">
 <form action = "calculation.php" method = "POST">
-<h3 class="text-center"> Enter Your Details </h3>
+<h3 class="text-center"><u>Enter Your Details</u>  </h3>
 <div>   
     
          <!----GENDER---->
 <br>
-<h5 class="text"> Please enter your gender</h5>
 
+
+<div class="form-row">
+<h5 class="text"> Please enter your gender:  </h5>
 <div class="form-check form-check-inline"> 
-<div class = "gender buttons">
 
 <label for="male">Male</label>
 <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
@@ -71,15 +72,38 @@ if (isset ($_POST['submit']))
 
   <!----Measurements---->
 <div>
-    <label for = "age"><b> Enter your age</b></label><br>   
+  <div class="form-row">
+    <div class="col-sm">
+    <label for = "age"><b> Enter your age</b></label><br> 
+     </div>  
+    <div class="col">
     <input type = "number"class="form-control" name = "age" required><br><br>
+</div>
+</div>
 
+    <div class="form-row">
+    <div class="col-sm">
     <label for = "height"><b> Enter your height</b></label><br>
-    <input type = "number" class="form-control" name = "height" required ><br><br>
+</div>
+    <div class="col-sm">
+   <input type = "number" class="form-control" name = "heightCm" placeholder="Cm" required ><br><br>
+   </div>
+     <div class="col-sm">
+    <input type = "number" class="form-control" name = "heightFt" placeholder="Feet" required ><br><br>
 
-    <label for = "weight"><b> Enter your weight</b></label><br>
-    <input type = "number" class="form-control" name = "weight" required><br><br>
-    
+</div>
+</div>
+</div>
+ <div class="form-row">
+    <div class="col-sm">
+  <label for = "weight"><b> Enter your weight</b></label><br>
+  </div>
+    <div class="col-sm">
+   <input type = "number" class="form-control" name = "weightKg" placeholder="Kg" required><br><br>
+   </div>
+    <div class="col-sm">
+    <input type = "number" class="form-control" name = "weightLb" placeholder="Lb">
+      </div>
 </div>
 
 
