@@ -1,14 +1,48 @@
-#dataCollection
+.dataCollection .b,p,label, h5, h3
 {
-    font-weight: 700;
-    background-image: url(../assets/img/1.jpeg);
+  font-weight: 800;
+  opacity: 0.9;
+  color: rgb(255, 72, 0);
+  font: outline;
+
+    
 }
 
 
+/*
 .workoutimage {
   background-image: url("./assets/img/img1.jpeg");
-  background-position: center;
+  background-position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+
+}
+*/
+
+#form-group 
+{
+transform: translate (-200px, -200px)
+
+}
+
+body 
+{
+background-image:url(../img/1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+text-decoration-color: blanchedalmond;
+
+}
+#mx-auto
+{
+
+  text-align: center;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 6vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }

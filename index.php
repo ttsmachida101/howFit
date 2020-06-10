@@ -16,30 +16,20 @@ if (isset ($_POST['submit']))
         <title>How Fit Are You</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel=stylesheet href="./assets/css/all.min.css">
-       <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+       <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
-<!--
-<style>
-body> workoutimage {
-  background-image: url("./assets/img/img1.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-</style>
----->
+
 
 
  <body>
 <!--------------Header---------------->
 <section class = "header">
- <div class = "container-fluid">
-<div class="jumbotron fa-align-justify">
- <div class="mx-auto" style="width: 600px;">
+ <div class = "container-sm">
+<div class="jumbotron vertical-center">
+ <div class="mx-auto">
   <h class="display-2">How Fit Are You?</h>
-  <p class="lead">The first step in your fitness journey | Use this simple App to see how fit you are</p>
+  <h4 class="lead">The first step in your fitness journey | Use this simple App to see how fit you are</h4>
   </div>
 </div>
 </div>
@@ -53,33 +43,31 @@ body> workoutimage {
 
 
  
-   
+   <!----Form Section Begins---->
  <div class="form-group row">
 <form action = "calculation.php" method = "POST">
-<img src ="./assets/img/img1.jpeg" style ="background-size: cover;" >
 <h3 class="text-center"> Enter Your Details </h3>
 <div>   
     
          <!----GENDER---->
 <br>
-<h5 class="text-center"> Please enter your gender</h5>
+<h5 class="text"> Please enter your gender</h5>
 
 <div class="form-check form-check-inline"> 
+<div class = "gender buttons">
 
 <label for="male">Male</label>
 <input class="form-check-input" type="radio" id="male" name="gender" value="male" required>
-
-
 
 <label for="female">Female</label>
 <input class="form-check-input" type="radio" id="female" name="gender" value="female">
 
 <label for="other">Other</label>
 <input class="form-check-input" type="radio" id="other" name="gender" value="other">
-
+</div>
 </div>
 
-<br>
+<br><br>
 
   <!----Measurements---->
 <div>
