@@ -117,15 +117,33 @@ if (isset ($_POST['submit']))
 
 
   <!---- Workout Activity---->
+<div class="form-row">
+  <div class="col-md-4">
+  <p><b>How many times per week do you work-out?</b></p>
+  </div>
  <div class="form-check form-check-inline">
-<p><b>How many times per week do you work-out?</b></p>
+
+
+<div class="col-md-6">
+<label for="zero">0 -1 times per week</label>
 <input class="form-check-input" type="radio" id="zero" name="workout" value="zero" required>
-<label for="zero">0 -1 times per week</label><br>
-<input class="form-check-input" type="radio" id="two to three times" name="workout" value="two to three times">
-<label for="two to three times"> 2- 3 times per week</label><br>
-<input class="form-check-input" type="radio"id="more than three times" name="workout" value="more than three times">
-<label for="more than three times"> More than 3 times per week</label>
 </div>
+
+<div class="col-md-6">
+<label for="two to three times"> 2- 3 times per week</label>
+<input class="form-check-input" type="radio" id="two to three times" name="workout" value="two to three times">
+</div>
+
+<div class="col-md-6">
+<label for="more than three times"> More than 3 times per week</label>
+<input class="form-check-input" type="radio"id="more than three times" name="workout" value="more than three times">
+
+</div>
+</div>
+</div>
+
+
+
 
 
   <!----Daily Activity---->
