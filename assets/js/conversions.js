@@ -13,7 +13,7 @@ function kgToLb(valNum) {
   document.document.getElementsByName("weightLb").innerHTML=valNum*2.20462;
 }
 
-/*height conversions*/
+/*-------------------height conversions---------------------------------*/
 function heightConverter(source, valNum) {
   valNum = parseFloat(valNum);
   var inputFeet = document.getElementById("inputFeet");
@@ -24,11 +24,11 @@ function heightConverter(source, valNum) {
   }
 
    if (source=="inputCMeters") {
- inputFeet.value=(valNum*0.032808).toFixed(3);
+     inputFeet.value = (valNum * 0.032808).toFixed(3);
   }
 }
 
-/* Weight Conversions */
+/*-------------------Weight Conversions-------------------------------- */
 function weightConverter(source,valNum) {
   valNum = parseFloat(valNum);
   var inputLb = document.getElementById("inputLb");
