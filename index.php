@@ -55,7 +55,7 @@ if (isset ($_POST['submit']))
 
 <div class="form-row">
 <div class="col-md-6">
-<h5 class="text"> Please enter your gender :</h5>
+<p class="text"> Please enter your gender :</p>
 </div>
 <div class="form-check form-check-inline"> 
 
@@ -144,27 +144,41 @@ if (isset ($_POST['submit']))
 
 
 
-
+<br></br>
 
   <!----Daily Activity---->
-<div>
-    <div class="form-check form-check-inline">
-<p><b>How active are you on a daily baisis</b></p>
+
+<div class="form-row">
+  
+<div class="form-check form-check-inline">
+  <div class="col-md-4">
+    <p><b>How active are you on a daily baisis?</b></p>
+    </div>
+
+<div class="col-md-3">
+<label for="Not active">Not very active - ( Office Job - I spend a lot of time sitting)</label>
 <input class="form-check-input" type="radio" id="Not active" name="activity" value="Not Active" required>
-<label for="Not active">Not very active(Office Job - I spend a lot of time sitting)</label><br>
+</div>
+
+<div class="col-md-3">
+  <label for="moderately active">Moderately active - ( I usually take long walks)</label>
 <input class="form-check-input" type="radio"id="moderately active" name="activity" value="moderately active">
-<label for="moderately active">Moderately active(I usually take long walks)</label><br>
+</div>
+
+<div class="col-md-3">
+<label for="very active">Very Active - ( I Spend the day on my feet)</label>
 <input class="form-check-input" type="radio" id="very active" name="activity" value="very active">
-<label for="very active">Very Active (I Spend the day on my feet)</label>
+
+</div>
 </div>
 </div>
 
-</div>
-
-<br><br>
- <div>
+<br></br>
+ <div class = "row">
+   <div class="col text-center">
 <input type = "submit" class="btn btn-success btn-lg" name ="submit" value = "submit">
-  </div>       
+  </div>    
+   </div>    
 </form> 
  </div>
    </div>
