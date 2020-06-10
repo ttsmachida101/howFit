@@ -12,6 +12,7 @@ function heightConverter(source, valNum) {
    if (source=="inputCMeters") {
      inputFeet.value = (valNum * 0.032808).toFixed(3);
   }
+    /*------------------- End Of Height Conversions----------------------------------*/
 }
 
 /*-------------------Weight Conversions----------------------------------*/
@@ -26,4 +27,5 @@ function weightConverter(source,valNum) {
    if (source=="inputKg") {
     inputLb.value=(valNum*2.20462).toFixed();
   }
+  /*------------------- End Of Weight Conversions----------------------------------*/
 }
