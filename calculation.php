@@ -70,18 +70,23 @@ echo $gender. " " .$age. "  " .$height. " ".$weight. " Subject's BMI is ".$bmi;
             <!--------------Table Body---------------->
             <tbody>
                 <tr>
-                    <th scope="row">Approximate BMR (Base Metobilic Rate)</th>
-                    <td><?php echo (round($bmr,0)); ?></td>
-                    <td>Otto</td>
-                </tr>
-                <tr>
                     <th scope="row"> Approximate BMI (Body Mass Index)</th>
                     <td><?php echo(round ($bmi,2));  ?></td>
                     <td>18.5 - 23</td>
                 </tr>
+                <tr>
+                    <th scope="row">Approximate BMR (Base Metobilic Rate)</th>
+                    <td><?php echo (round($bmr,0)); ?></td>
+                    <td>- N/A -</td>
+                </tr>
             </tbody>
         </table>
+        <!---------------Meter------------------------------->
+        <br><br>
 
+
+
+        <br><br><br><br><br><br>
         <!--------------Enter New Values Button---------------->
         <form action="index.php" method="POST">
             <div class="row">
