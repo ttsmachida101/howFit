@@ -6,11 +6,11 @@ function heightConverter(source, valNum) {
   var inputCMeters = document.getElementById("inputCMeters");
  
   if (source=="inputFeet") {
-   inputCMeters.value=(valNum/0.032808).toFixed();
+   inputCMeters.value=(valNum/0.032808).toFixed(2);
   }
 
    if (source=="inputCMeters") {
-     inputFeet.value = (valNum * 0.032808).toFixed(3);
+     inputFeet.value = (valNum * 0.032808).toFixed(2);
   }
     /*------------------- End Of Height Conversions----------------------------------*/
 }
@@ -22,10 +22,10 @@ function weightConverter(source,valNum) {
   var inputKg = document.getElementById("inputKg");
  
   if (source=="inputLb") {
-    inputKg.value=(valNum*0.453592).toFixed();
+    inputKg.value=(valNum*0.453592).toFixed(2);
   }
    if (source=="inputKg") {
-    inputLb.value=(valNum*2.20462).toFixed();
+    inputLb.value=(valNum*2.20462).toFixed(2);
   }
   /*------------------- End Of Weight Conversions----------------------------------*/
 }
