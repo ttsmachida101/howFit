@@ -1,7 +1,8 @@
 # howFit
 - Simple Web app to give show BMI and BMR
 
-<img src="./assets/img/HowFit.png" width="600"/>
+![](assets/img/HowFit.png)
+
 ## How to run the app
 php -S localhost:3000
 
