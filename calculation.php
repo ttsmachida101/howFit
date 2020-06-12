@@ -1,6 +1,4 @@
 <?Php
-  
-echo ("Server Running\n");
 $gender = $_POST['gender'];
 $age = $_POST['age'];
 $height= $_POST['heightCm'];
@@ -16,14 +14,6 @@ else
 {
 $bmr =  (10* $weight) + (6.25 * $height) - (5* $age )+5;
 }
-
-
-
-
-echo $gender. " " .$age. "  " .$height. " ".$weight. " Subject's BMI is ".$bmi;
-
-
-
 
 ?>
 
