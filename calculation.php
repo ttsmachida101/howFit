@@ -6,7 +6,19 @@ $age = $_POST['age'];
 $height= $_POST['heightCm'];
 $weight = $_POST['weightKg'];
 
-$bmi = $weight/ ($height**2);
+$bmi = 10000*($weight/ ($height**2));
+
+if ($gender == 'female')
+{
+$bmr =  (10* $weight) + (6.25 * $height) - (5* $age )-161;
+}
+else
+{
+$bmr =  (10* $weight) + (6.25 * $height) - (5* $age )+5;
+}
+
+
+
 
 echo $gender. " " .$age. "  " .$height. " ".$weight. " Subject's BMI is ".$bmi;
 
@@ -59,13 +71,13 @@ echo $gender. " " .$age. "  " .$height. " ".$weight. " Subject's BMI is ".$bmi;
             <tbody>
                 <tr>
                     <th scope="row">Approximate BMR (Base Metobilic Rate)</th>
-                    <td>Mark</td>
+                    <td><?php echo (round($bmr,0)); ?></td>
                     <td>Otto</td>
                 </tr>
                 <tr>
                     <th scope="row"> Approximate BMI (Body Mass Index)</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
+                    <td><?php echo(round ($bmi,2));  ?></td>
+                    <td>18.5 - 23</td>
                 </tr>
             </tbody>
         </table>

@@ -114,8 +114,6 @@ if (isset ($_POST['submit']))
                                               onchange="heightConverter(this.id,this.value)">
                                           <br><br>
 
-
-
                                       </div>
                                   </div>
                               </div>
