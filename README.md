@@ -1,6 +1,6 @@
 # howFit
 - Simple Web app to give show BMI and BMR
-
+![HowFit](https://user-images.githubusercontent.com/35926620/84484225-18bb7e00-ac60-11ea-8706-29b7013d60ba.PNG)
 ![](assets/img/HowFit.png)
 
 ## How to run the app
