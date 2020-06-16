@@ -10,4 +10,4 @@ php -S localhost:3000
     ### dietary recommendations 
     ### workout advice
     
-   # Author - Tino Machida
+   ### Author - Tino Machida
