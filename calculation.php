@@ -74,12 +74,13 @@ $bmr =  (10* $weight) + (6.25 * $height) - (5* $age )+5;
         <!---------------Meter------------------------------->
         <br><br>
 
-
-
         <br><br><br><br><br><br>
         <!--------------Enter New Values Button---------------->
         <form action="index.php" method="POST">
             <div class="row">
+                
+
+<!--------------------SUBMIT BUTTON-------------------------->
                 <div class="col text-center">
                     <input type="submit" class="btn btn-success btn-lg" name="submit" value="Enter New Value Set">
                 </div>
