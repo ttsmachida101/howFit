@@ -7,8 +7,8 @@
 php -S localhost:3000
 
 ## Future Revisions might have more features such as:
-    ### dietary recommendations 
-    ### workout advice
-    ### Calories and Activity Tracking
+    - dietary recommendations 
+    - workout advice
+    - Calories and Activity Tracking
     
    ### Author - Tino Machida
